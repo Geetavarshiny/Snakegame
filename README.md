@@ -24,7 +24,10 @@ I have developed a classic arcade game using pygame and python where the player 
  2. Install Pygame --> pip install pygame
  3. Create the snake game code
 
+  
+
     import pygame
+    
 import random
 
 pygame.init()
@@ -91,7 +94,11 @@ def display_snake_and_food():
               
 
 4. Run the code --> python snake_game.py
+5. The food appears at random locations using--> random.randrange()
 
    This will launch the snake game.By using arrow keys the snake movements can be controlled.
-   The "GAME OVER!!!" is displayed when the snake hits the walls or itself.  
+   The "GAME OVER!!!" is displayed when the snake hits the walls or itself.
+
+
+
  
