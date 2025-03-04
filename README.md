@@ -24,16 +24,13 @@ I have developed a classic arcade game using pygame and python where the player 
  2. Install Pygame --> pip install pygame
  3. Create the snake game code
 
+    import pygame
+import random
 
-     import pygame
-    
-      import random
-    
-    pygame.init()
-    
+pygame.init()
+
 width, height = 600, 600
 game_screen = pygame.display.set_mode((width, height))
-
 pygame.display.set_caption("GV Snake game 3")
 
 snake_x, snake_y = width/2, height/2
@@ -46,7 +43,7 @@ clock = pygame.time.clock()
 snake_body = [(snake_x, snake_y)]
 
 def display_snake_and_food():
-global snake_x, snake_y, food_x, food_y
+    global snake_x, snake_y, food_x, food_y
     snake_x = (snake_x + snake_x)%width
     snake_y = (snake_y + snake_y)%height
 
@@ -88,8 +85,10 @@ global snake_x, snake_y, food_x, food_y
                                         change_y = 10
                             display_snake_and_food()
                             clock.tick(5)
+   
 
 
+              
 
 4. Run the code --> python snake_game.py
 
