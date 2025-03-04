@@ -24,8 +24,7 @@ I have developed a classic arcade game using pygame and python where the player 
  2. Install Pygame --> pip install pygame
  3. Create the snake game code
 
-  
-        import pygame
+import pygame
 import random
 
 pygame.init()
