@@ -26,6 +26,7 @@ I have developed a classic arcade game using pygame and python where the player 
 
 
      import pygame
+    
       import random
     
     pygame.init()
