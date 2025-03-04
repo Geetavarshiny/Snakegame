@@ -26,25 +26,19 @@ I have developed a classic arcade game using pygame and python where the player 
 
 
      import pygame
-     import random
-
-   pygame.init()
-
+      import random
+    pygame.init()
 width, height = 600, 600
 game_screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("GV Snake game 3")
-
 snake_x, snake_y = width/2, height/2
 change_x, change_y =0,0
-
 food_x, food_y = random.randrange(0, width)//10*10, random.randrange(0, height)//10*10
-
 clock = pygame.time.clock()
-
 snake_body = [(snake_x, snake_y)]
 
 def display_snake_and_food():
-    global snake_x, snake_y, food_x, food_y
+global snake_x, snake_y, food_x, food_y
     snake_x = (snake_x + snake_x)%width
     snake_y = (snake_y + snake_y)%height
 
